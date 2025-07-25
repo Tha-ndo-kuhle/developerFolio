@@ -8,6 +8,24 @@
 
 .skills-text-div {
   margin-left: 50px;
+
+  .skills-text-div.dark-mode .skills-text {
+    background-color: transparent !important;
+    color: #8e3e63 !important;  /* Or whatever shade you like */
+  }
+
+  .skills-text-div.dark-mode .skills-text-subtitle {
+    background-color: transparent !important;
+    color: #7b3f71 !important;
+  }
+}
+
+.skills-section {
+  background-color: #ffe6f2;  // pastel pink for both modes
+}
+
+.dark-mode .skills-section {
+  background-color: #ffe6f2;  // keep it pink in dark mode too
 }
 
 .skills-main-div > * {
@@ -23,10 +41,154 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  display: inline-block;
+  background-color: #ffd1dc; // pastel pink
+  padding: 12px 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(255, 182, 193, 0.2);
 }
+
 .subTitle {
   color: $subTitle;
 }
+.skills-section {
+  background: linear-gradient(135deg, #ffdde1 0%, #f2e3f3 100%);
+  padding: 60px 30px;
+  border-radius: 40px; // was 30px before
+  margin: 60px auto;
+  max-width: 1000px;
+  box-shadow: 0 12px 32px rgba(255, 182, 193, 0.2); // more feathered
+}
+.skill-bullet {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin: 12px 0;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-bullet:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.2);
+  background-color: #fff0f5;
+}
+
+.skills-icon {
+  font-size: 3rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ff80ab; // soft pink
+}
+
+.skills-icon:hover {
+  transform: scale(1.2);
+  color: #f06292; // deeper pink
+}
+
+.skills-carousel-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.skills-carousel-slide p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #fff5f9;
+  color: #444;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px lab(38.02% 38.15 -5.24);
+  max-width: 90%;
+}
+
+.dark-mode .skills-carousel-slide p {
+  background-color: lab(38.02% 38.15 -5.24);  // plum-toned pink
+  color: #fff;
+}
+
+.skills-carousel-slide:hover {
+  transform: scale(1.03);
+}
+
+.slick-slider {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.skills-carousel-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: #ffcfe6; // soft pink
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #d63384; // darker pink for the arrows
+  font-size: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.dark-mode .skills-heading {
+  background-color: #8e3e63; // slightly deeper pink
+  color: #fff;
+}
+
+.dark-mode .skills-text {
+  background-color: transparent;  // ✅ keep this to maintain the background in dark mode
+  color: #fff;  // ✅ keep this to make text visible in dark mode
+}
+
 
 /* Media Query */
 @media (max-width: 1380px) {

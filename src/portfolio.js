@@ -20,26 +20,21 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Thandokuhle Mdlalose",
+  title: "Hi all, I'm Kuhle",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Final-Year IT Student | Passionate About Software Dev, Cybersecurity & Big Data | Exploring Astroinformatics 🌌"
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "C:\Users\Kuhle\developerFolio\src\containers\greeting\resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Tha-ndo-kuhle",
+  linkedin: "https://www.linkedin.com/in/thandokuhle-m-4773251b3/",
+  gmail: "kuhlem80@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,75 +43,64 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "🌸 I’m not just a coder — I’m a builder of ideas, a problem solver, and a people-first tech enthusiast. From designing elegant solutions to facilitating mental health events, I bring heart and logic to everything I do. Whether it's debugging code or uplifting a community, I always show up with curiosity and care.",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "💻 Developing full-stack applications using C#, Java, and SQL",
+    "🎨 Creating clean, accessible front-end interfaces with HTML, CSS & JavaScript",
+    "🛡️ Applying cybersecurity best practices & building ethically conscious systems",
+    "🌌 Exploring the intersection of astronomy and data science (Astroinformatics)",
+    "🤝 Collaborating in Agile teams using Git & GitHub workflows",
+    "🧠 Leading wellness & mental health workshops with intention and empathy",
+    "🎤 Public speaking, mentoring, and turning complex ideas into accessible stories",
+    "🚀 Lifelong learner always chasing knowledge, creativity, and community",
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+  {
+    skillName: "HTML5",
+    fontAwesomeClassname: "vscode-icons:file-type-html",
+  },
+  {
+    skillName: "CSS3",
+    fontAwesomeClassname: "vscode-icons:file-type-css",
+  },
+  {
+    skillName: "JavaScript",
+    fontAwesomeClassname: "logos:javascript",
+  },
+  {
+    skillName: "MySQL",
+    fontAwesomeClassname: "logos:mysql",
+  },
+  {
+    skillName: "Git",
+    fontAwesomeClassname: "logos:git-icon",
+  },
+  {
+    skillName: "GitHub",
+    fontAwesomeClassname: "akar-icons:github-fill",
+  },
+  {
+    skillName: "C#",
+    fontAwesomeClassname: "devicon:csharp",
+  },
+  {
+    skillName: "C++",
+    fontAwesomeClassname: "logos:c-plusplus",
+  },
+  {
+    skillName: "Java",
+    fontAwesomeClassname: "devicon:java",
+  },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "logos:python",
+  },
+],
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -126,46 +110,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "North-West University",
+      logo: require("./assets/images/NWULogo.png"),
+      subHeader: "Bachelor of Science in Information Technology",
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Springs Girls High School",
+      logo: require("./assets/images/SGHSLogo.png"),
+      subHeader: "High School Career",
     }
   ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -174,40 +128,59 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Volunteered to job shadow the IT Support Team",
+      company: "BASF",
+      companylogo: require("./assets/images/BASFLogo.png"),
+      date: "08 June 2024 – 12 June 2024",
+      desc: "Oversaw daily IT Support operations.",
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Mental Health and Welbeing Mentor",
+      company: "CampusKey Student Accomodation",
+      companylogo: require("./assets/images/CKLogo.png"),
+      date: "January 2024 – July 2024",
+      desc: "Mental Health ambassador, student life liaison, Mental Health events facilitator."
     },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
   ]
 };
+
+// Tech Stack Section
+// This section is used to show your skills in a bar chart format
+// Set viewSkillBars to true to show this section
+// Set viewSkillBars to false to hide this section
+// You can also change the skills and their progress percentage
+// Make sure to include correct Font Awesome Classname to view your icon
+
+const techStack = {
+  viewSkillBars: false, // Set to false if you don’t want to show the section
+  experience: [
+    {
+      Stack: "Frontend/Design",
+      progressPercentage: "90%",
+    },
+    {
+      Stack: "Backend",
+      progressPercentage: "70%",
+    },
+    {
+      Stack: "Programming",
+      progressPercentage: "80%",
+    },
+  ],
+  animation: require("./assets/lotties/skills.json"),
+};
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+  githubUserName: "Tha-ndo-kuhle",
+  showGithubProfile: "true", // Show user's GitHub profile
+  display: false // Set false to hide this section
 };
+
 
 // Some big projects you have worked on
 
@@ -239,7 +212,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +273,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +297,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +316,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +329,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,15 +345,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+27 60 388 8263 ",
+  email_address: "kuhlem80@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -391,8 +364,8 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
   techStack,
+  educationInfo,
   workExperiences,
   openSource,
   bigProjects,
